@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Record Sale</title>
+</head>
+<body>
+    <h2>Record a Sale</h2>
+
+    <form action="{{ url_for('sales') }}" method="POST">
+        <label>Item ID:</label>
+        <input type="number" name="item_id" required><br><br>
+
+        <label>Quantity Sold:</label>
+        <input type="number" name="quantity" required><br><br>
+
+        <input type="submit" value="Record Sale">
+    </form>
+
+    <h3>Current Inventory:</h3>
+    <ul>
+        {% for item in inventory %}
+        <li>ID {{ item['item_id'] }} - {{ item['name'] }} (Stock: {{ item['stock'] }})</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

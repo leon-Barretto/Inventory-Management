@@ -1,0 +1,30 @@
+[
+    {
+        "item_id": 1,
+        "name": "Blue T-Shirt",
+        "category": "Clothing",
+        "price": 19.99,
+        "stock": 50
+    },
+    {
+        "item_id": 2,
+        "name": "Coffee Mug",
+        "category": "Accessories",
+        "price": 9.99,
+        "stock": 100
+    },
+    {
+        "item_id": 3,
+        "name": "Wireless Mouse",
+        "category": "Electronics",
+        "price": 24.99,
+        "stock": 28
+    },
+    {
+        "item_id": 4,
+        "name": "Watermelon",
+        "category": "Fruits",
+        "price": 300.0,
+        "stock": 20
+    }
+]

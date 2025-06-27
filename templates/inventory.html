@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inventory</title>
+</head>
+<body>
+    {% if inventory %}
+    <table border="1">
+        <tr>
+            <th>Item ID</th>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Price</th>
+            <th>Stock</th>
+        </tr>
+
+        {% for item in inventory %}
+        <tr>
+            <td>{{ item['item_id'] }}</td>
+            <td>{{ item['name'] }}</td>
+            <td>{{ item['category'] }}</td>
+            <td>{{ item['price'] }}</td>
+            <td>{{ item['stock'] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% else %}
+    <p>No inventory data found</p>
+    {% endif %}
+</body>
+</html>
