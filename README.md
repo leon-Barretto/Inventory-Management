@@ -36,6 +36,7 @@ The application solves a common business problem where small businesses often st
 ---
 
 ## Project Structure
+```
 /Inventory-Management-System/
 │
 ├── app.py
@@ -48,7 +49,7 @@ The application solves a common business problem where small businesses often st
     ├── add_item.html
     ├── sales.html
     └── dashboard.html
-
+```
 
 ---
 
